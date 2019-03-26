@@ -1,4 +1,4 @@
-[
+const idols = [
   { "name": "아이린", "group": "레드벨벳", "company": "SM Entertainment", "birth": "1991-03-29", "height": 158, "imageUrl": "https://w.namu.la/s/e2ad961635e3e87ccbf75391e61053522a81c9f15025f1c9818603aded897cd91ab3be73a1c163984c38090d0f2f0b7d07467e4a6314256836ccb3c97e5ece019244c9cfc666bf53bd1becedaff30d03ab408be431d884dc2bf5e67490f9d07d" },
   { "name": "슬기", "group": "레드벨벳", "company": "SM Entertainment", "birth": "1994-02-10", "height": 161, "imageUrl": "https://w.namu.la/s/a49cf0a96f8f9ce49b45535f8b4af60a5a99fc83b6a97191ccc537c8fca48e7828b3a530f0b127709a57f66444e7ee7864fc9515cfd1490c3b246d0d3df6dce52e6ab387c8ea83970572698dda8087d5710671aadccd79a1e06c15f46ee24db6" },
   { "name": "웬디", "group": "레드벨벳", "company": "SM Entertainment", "birth": "1994-02-21", "height": 159, "imageUrl": "https://w.namu.la/s/5cd947cfc0b20af7d162ece93f21ee8ba659cfd138275dba51a2a0eadad44e0d081ff6ca587400e8fa823f173490add399563a2e2dc36fc983cfee5d89a736db77f80f828d9e50a09809cbe4749e7b702d3fe4d0f2d5b117e2b5b1ae60bcb287" },
@@ -17,4 +17,6 @@
   { "name": "제니", "group": "블랙핑크", "company": "YG Entertainment", "birth": "1996-01-16", "height": 163, "imageUrl": "https://w.namu.la/s/720fb214ced4ad48f014412b23bb744fcd06e98d286562932a9e91bb1b49ae6318dc6ff9a8bf9b23213a88a55219f5501fbb7b53b459e875395ec09d9e4a7025a0e09da371b7bbd3b2c73934303b895a0d563cb8c649813a7195f8f65e709dfd" },
   { "name": "로제", "group": "블랙핑크", "company": "YG Entertainment", "birth": "1997-02-11", "height": 168, "weight": 46, "imageUrl": "https://w.namu.la/s/3b520c6e61bcdb5df9d8c7b3f3afab11d7b88558bf5b4beebe86df2957465166683d5a39fd72ef2ff6deb50a8f36c15edf111d8cb83e9ba32ec8e0ae48ea89e7c372aa97a350b89cf65110b4ba75b7785050211cf9cb0760ed7ee9ff56132a4b" },
   { "name": "리사", "group": "블랙핑크", "company": "YG Entertainment", "birth": "1997-03-27", "height": 166.5, "weight": 44.7, "imageUrl": "https://w.namu.la/s/d0fc58383de6b564443da45778f49bb2bf4ee42978d58417a2cb0b935054809c4ae0f6fefb44dc7de373bbf9e3d4c585df961ced28c2953af75489fa10f7515e9029bcfc1693ebb65b0f27d578507fed1bf6bddf1b4ccc005a4212dbbe4f532e" }
-]
+];
+
+export { idols };
