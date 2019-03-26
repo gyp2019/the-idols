@@ -1,0 +1,38 @@
+[
+  {
+    "name": "레드벨벳",
+    "company": "SM Entertainment",
+    "members": [
+      { "name": "아이린", "group": "레드벨벳", "birth": "1991-03-29", "height": 158 },
+      { "name": "슬기", "group": "레드벨벳", "birth": "1994-02-10", "height": 161 },
+      { "name": "웬디", "group": "레드벨벳", "birth": "1994-02-21", "height": 159 },
+      { "name": "조이", "group": "레드벨벳", "birth": "1996-09-03", "height": 167 },
+      { "name": "예리", "group": "레드벨벳", "birth": "1999-03-05", "height": 158 }
+    ]
+  },
+  {
+    "name": "트와이스",
+    "company": "JYP Entertainment",
+    "members": [
+      { "name": "나연", "group": "트와이스", "birth": "1995-09-22", "height": 163, "weight": 48 },
+      { "name": "정연", "group": "트와이스", "birth": "1996-11-01", "height": 167, "weight": 49 },
+      { "name": "모모", "group": "트와이스", "birth": "1996-11-09", "height": 162, "weight": 48 },
+      { "name": "사나", "group": "트와이스", "birth": "1996-12-29", "height": 164, "weight": 45 },
+      { "name": "지효", "group": "트와이스", "birth": "1997-02-01", "height": 160, "weight": 47 },
+      { "name": "미나", "group": "트와이스", "birth": "1997-03-24", "height": 163, "weight": 46 },
+      { "name": "다현", "group": "트와이스", "birth": "1998-05-28", "height": 158, "weight": 49 },
+      { "name": "채영", "group": "트와이스", "birth": "1999-04-23", "height": 160, "weight": 47 },
+      { "name": "쯔위", "group": "트와이스", "birth": "1999-06-14", "height": 170, "weight": 49 }
+    ]
+  },
+  {
+    "name": "블랙핑크",
+    "company": "YG Entertainment",
+    "memberss": [
+      { "name": "지수", "group": "블랙핑크", "birth": "1995-01-03", "height": 162, "weight": 44 },
+      { "name": "제니", "group": "블랙핑크", "birth": "1996-01-16", "height": 163 },
+      { "name": "로제", "group": "블랙핑크", "birth": "1997-02-11", "height": 168, "weight": 46 },
+      { "name": "리사", "group": "블랙핑크", "birth": "1997-03-27", "height": 166.5, "weight": 44.7 }
+    ]
+  }
+]
