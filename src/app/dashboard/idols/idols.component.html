@@ -1,14 +1,14 @@
-<div class="card mb-3" *ngFor="let idol of idols">
+<div class="card mb-3" *ngFor="let girl of lastest_idols.girls">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img [src]="idol.imageUrl" class="card-img" alt="{{idol.name}}">
+      <img [src]="girl.imageUrl" class="card-img" alt="{{girl.name}}">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">{{ idol.name }}</h5>
-        <p class="card-text mb-0">그룹: {{ idol.group }}</p>
-        <p class="card-text mb-0">소속사: {{ idol.company }}</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">{{ girl.name }}</h5>
+        <p class="card-text mb-0">그룹: {{ girl.group }}</p>
+        <p class="card-text mb-0">소속사: {{ girl.company }}</p>
+        <p class="card-text"><small class="text-muted">{{ girl.birth }}</small></p>
       </div>
     </div>
   </div>

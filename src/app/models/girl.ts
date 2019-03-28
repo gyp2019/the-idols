@@ -1,7 +1,7 @@
-export class Idol {
+export class Girl {
   name: string;
   birth: string;
-  height?: number;
+  height: number;
   weight?: number;
   group: string;
   company: string;
