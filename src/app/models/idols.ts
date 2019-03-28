@@ -1,8 +1,21 @@
-import { Girl } from './girl';
+import { IGirl } from './IGirl';
 
 export class Idols {
-  status: string;
-  source: string;
-  sortBy: string;
-  girls: Girl[];
+  private _girls: IGirl[];
+
+  constructor(
+    public status: string,
+    public source: string,
+    public sortBy: string,
+  ) {}
+
+  get girls(): IGirl[] {
+    return this._girls;
+  }
+
+  set girls(value: IGirl[]) {
+    if (value.length > 0) {
+      this._girls = value;
+    }
+  }
 }
