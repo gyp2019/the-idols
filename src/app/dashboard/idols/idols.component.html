@@ -7,7 +7,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ idol.name }}</h5>
         <p class="card-text mb-0">{{ idol.height }} cm</p>
-        <p class="card-text mb-0">{{ idol.weight }} kg</p>
+        <p class="card-text mb-0" *ngIf="idol.weight">{{ idol?.weight }} kg</p>
         <p class="card-text"><small class="text-muted">{{ idol.birth }}</small></p>
       </div>
     </div>
