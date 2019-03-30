@@ -1,12 +1,10 @@
-import { IGirl } from './IGirl'
+import { IIdol } from './IIdol';
 
-export class Girl implements IGirl{
+export class Idol implements IIdol {
   name: string;
   birth: string;
   height: number;
   weight?: number;
-  group: string;
-  company: string;
   imageUrl: string;
 
   getFormattedBirth(): string {

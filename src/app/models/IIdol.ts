@@ -1,10 +1,8 @@
-export interface IGirl {
+export interface IIdol {
   name: string;
   birth: string;
   height: number;
   weight?: number;
-  group: string;
-  company: string;
   imageUrl: string;
 
   getFormattedBirth(): string;
