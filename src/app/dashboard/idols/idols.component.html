@@ -1,7 +1,7 @@
-<div class="card mb-3" *ngFor="let idol of girlGroup.members">
+<div class="card mb-3" *ngFor="let idol of girlGroup?.members">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img [src]="idol.imageUrl" class="card-img" alt="{{idol.name}}">
+      <img [src]="idol.imageUrl" class="card-img rounded-left" alt="{{idol.name}}">
     </div>
     <div class="col-md-8">
       <div class="card-body">
