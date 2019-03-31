@@ -1,4 +1,8 @@
-<div class="card mb-3" *ngFor="let idol of girlGroup?.members">
+<!-- <div *ngIf="group$ | async">
+  <h4>{{ group$.name }}</h4>
+</div> -->
+
+<div class="card mb-3" *ngFor="let idol of group$.members | async">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img [src]="idol.imageUrl" class="card-img rounded-left" alt="{{idol.name}}">

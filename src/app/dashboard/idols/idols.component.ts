@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 import { GirlGroup } from 'src/app/models/GirlGroup';
 import { IdolsApiService } from 'src/app/share/idols-api.service';
@@ -9,18 +13,26 @@ import { IdolsApiService } from 'src/app/share/idols-api.service';
   styleUrls: ['./idols.component.css']
 })
 export class IdolsComponent implements OnInit {
-  girlGroup: GirlGroup;
+  group$: Observable<GirlGroup>;
 
-  constructor(private idolsService: IdolsApiService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private service: IdolsApiService,
+  ) { }
 
   ngOnInit() {
     this.getIdols();
   }
 
   getIdols() {
-    this.idolsService.getIdols('blackpink')
-    .subscribe(
-      girlGroup => this.girlGroup = girlGroup
+    this.group$ = this.route.paramMap.pipe(
+      switchMap((params: ParamMap) => this.service.getIdols(params.get('group')))
     );
+
+    // const group = this.route.snapshot.paramMap.get('group');
+    // this.service.getIdols(group)
+    // .subscribe(
+    //   girlGroup => this.girlGroup = girlGroup
+    // );
   }
 }
