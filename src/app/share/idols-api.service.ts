@@ -15,12 +15,13 @@ export class IdolsApiService {
 
   constructor(private http: HttpClient) { }
 
-  getIdols(group: string): Observable<GirlGroup> {
+  getGirlGroup(group: string): Observable<GirlGroup> {
     const url = `${this.idolsUrl}/${group}.json`;
-    return this.http.get<GirlGroup>(url).pipe(
-      tap(_ => console.log('fetched GirlGroup')),
-      catchError(this.handleError<GirlGroup>('getIdols', null))
-    );
+    return this.http.get<GirlGroup>(url)
+      .pipe(
+        tap(_ => console.log(`fetched GirlGroup: ${group}`)),
+        catchError(this.handleError<GirlGroup>('getIdols', null))
+      );
   }
 
   handleError<T> (operation = 'operation', result?: T) {
